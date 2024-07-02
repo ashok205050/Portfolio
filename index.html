@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PortFolio</title>
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/blog-single.css">
+  <link rel="stylesheet" href="css/skins/color-1.css" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+  <!-- Style Switcher / Skins -->
+  <link rel="stylesheet" href="css/skins/color-1.css" class="alternate-style" title="color-1" disabled />
+  <link rel="stylesheet" href="css/skins/color-2.css" class="alternate-style" title="color-2" disabled />
+  <link rel="stylesheet" href="css/skins/color-3.css" class="alternate-style" title="color-3" disabled />
+  <link rel="stylesheet" href="css/skins/color-4.css" class="alternate-style" title="color-4" disabled />
+  <link rel="stylesheet" href="css/skins/color-5.css" class="alternate-style" title="color-5" disabled />
+
+  <link rel="stylesheet" href="css/style-switcher.css" />
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="images/fabicon.png" />
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+</head>
+
+<body class="dark">
+  <!-- Main Container Start -->
+  <div class="main-container">
+    <!-- Aside Start -->
+    <div class="aside">
+      <div class="logo">
+        <a href="index.html"><span>H</span>ello</a>
+      </div>
+      <div class="nav-toggler">
+        <span></span>
+      </div>
+      <ul class="nav">
+        <li>
+          <a href="#home" class="active"><i class="fa fa-home"></i> Home</a>
+        </li>
+        <li>
+          <a href="#about"><i class="fa fa-user"></i> About</a>
+        </li>
+        <!-- <li>
+          <a href="#service"><i class="fa fa-list"></i> Services</a>
+        </li> -->
+        <li>
+          <a href="#portfolio"><i class="fa fa-briefcase"></i> Portfolio</a>
+        </li>
+        <!-- <li>
+          <a href="#blog"><i class="fa-brands fa-readme"></i> Blog</a>
+        </li> -->
+        <li>
+          <a href="#contact"><i class="fa fa-comments"></i> Contact</a>
+        </li>
+
+      </ul>
+    </div>
+    <!-- Aside End -->
+    <!-- Main Content Start -->
+    <div class="main-content">
+      <!-- Home Section Start -->
+      <section class="home active section" id="home">
+        <div class="container">
+          <div class="row">
+            <div class="home-info padd-15">
+              <h3 class="hello">
+                Hello, my name is <span class="name">Ashok Maurya</span>
+              </h3>
+              <h3 class="my-profession">
+                Hey <span class="typing"></span>
+              </h3>
+              <p>
+                I'm a Computer Science Graduate eager to dive into the tech world. I love figuring out how things work and making them better. I've been learning languages like Python, Java, and C++, and I'm pumped to put them to use. Whether it's coding with a team or tackling a solo project, I'm ready to learn and grow. I'm on the lookout for my first job to kickstart my career and bring my passion for tech to life!"
+              </p>
+              <a href="https://firebasestorage.googleapis.com/v0/b/portfolio-baf84.appspot.com/o/Ashok%20maurya.pdf?alt=media&token=b219a2c3-1ae6-4d3e-a047-3dbb826870f8" class="btn">Download CV</a>
+            </div>
+            <div class="home-img padd-15">
+              <img src="images/ashok.jpg" alt="hero" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Home Section End -->
+
+      <!-- About Section Start -->
+      <section class="about section" id="about">
+        <div class="container">
+          <div class="row">
+            <div class="section-title padd-15">
+              <h2>About Me</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="about-content padd-15">
+              <div class="row">
+                <div class="about-text padd-15">
+                  <h3>I'm Ashok Maurya</h3>
+                </div>
+              </div>
+              <div class="row">
+                <div class="personal-info padd-15">
+                  <div class="row">
+                    <div class="info-item padd-15">
+                      <p>Email : <span>ashokmaurya2050@gmail.com</span></p>
+                    </div>
+                    <div class="info-item padd-15">
+                      <p>Degree : <span>CS (Computer Science)</span></p>
+                    </div>
+                    <div class="info-item padd-15">
+                      <p>State : <span>Maharashtra (India)</span></p>
+                    </div>
+                    <div class="info-item padd-15">
+                      <p>City : <span>Thane</span></p>
+                    </div>
+                    <div class="info-item padd-15">
+                      <p>Freelance : <span>Available</span></p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="buttons padd-15">
+                      <a href="https://firebasestorage.googleapis.com/v0/b/portfolio-baf84.appspot.com/o/Ashok%20maurya.pdf?alt=media&token=b219a2c3-1ae6-4d3e-a047-3dbb826870f8" class="btn">Download CV</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="skills padd-15">
+                  <div class="row">
+                    <div class="skills-item padd-15">
+                      <h5>Web Development</h5>
+                      <div class="progress">
+                        <div class="progress-in" style="width: 85%"></div>
+                        <div class="skill-percent">85%</div>
+                      </div>
+                    </div>
+                    <div class="skills-item padd-15">
+                      <h5>Git</h5>
+                      <div class="progress">
+                        <div class="progress-in" style="width: 100%"></div>
+                        <div class="skill-percent">100%</div>
+                      </div>
+                    </div>
+                    <div class="skills-item padd-15">
+                      <h5>Java</h5>
+                      <div class="progress">
+                        <div class="progress-in" style="width: 75%"></div>
+                        <div class="skill-percent">75%</div>
+                      </div>
+                    </div>
+                    <div class="skills-item padd-15">
+                      <h5>C,C++</h5>
+                      <div class="progress">
+                        <div class="progress-in" style="width: 70%"></div>
+                        <div class="skill-percent">70%</div>
+                      </div>
+                    </div>
+                    <div class="skills-item padd-15">
+                      <h5>Firebase</h5>
+                      <div class="progress">
+                        <div class="progress-in" style="width: 80%"></div>
+                        <div class="skill-percent">80%</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="education padd-15">
+                  <h3 class="title">Education</h3>
+                  <div class="row">
+                    <div class="timeline-box padd-15">
+                      <div class="timeline shadow-dark">
+                        <!-- Timeline item -->
+                        <div class="timeline-item">
+                          <div class="circle-dot"></div>
+                          <h3 class="timeline-date">
+                          </h3>
+                          <h4 class="timeline-title">
+                            Bachelor in Computer Science
+                          </h4>
+                          <p class="timeline-text">
+                            Complited my three years in Bachelor Degree in Computer Science and waiting for the passing Certificate.
+                          </p>
+                        </div>
+                        <!-- Timeline item -->
+                        <div class="timeline-item">
+                          <div class="circle-dot"></div>
+                          <h3 class="timeline-date">
+                          </h3>
+                          <h4 class="timeline-title">
+                            Higher Secondary Certificate (HSC)
+                          </h4>
+                          <p class="timeline-text">
+                            Score : 70%
+                          </p>
+                        </div>
+                        <!-- Timeline item -->
+                        <div class="timeline-item">
+                          <div class="circle-dot"></div>
+                          <h3 class="timeline-date">
+                          </h3>
+                          <h4 class="timeline-title">
+                            Secondary School Certificate (SSC)
+                          </h4>
+                          <p class="timeline-text">
+                            Score : 64.60%
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="experience padd-15">
+                  <h3 class="title">Experience</h3>
+                  <div class="row">
+                    <div class="timeline-box padd-15">
+                      <div class="timeline shadow-dark">
+                        <!-- Timeline item -->
+                        <div class="timeline-item">
+                          <div class="circle-dot"></div>
+                          <h3 class="timeline-date">
+                            <!-- <i class="fa fa-calendar"></i> 2013 - 2015 -->
+                          </h3>
+                          <h4 class="timeline-title">
+                            Fresher
+                          </h4>
+                        </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- About Section End -->
+
+      <!-- Portfolio Section Start -->
+      <section class="portfolio section" id="portfolio">
+        <div class="container">
+          <div class="row">
+            <div class="section-title padd-15">
+              <h2>Portfolio</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="portfolio-heading padd-15">
+              <h2>My Projects :</h2>
+            </div>
+          </div>
+          <div class="Project-categories">
+            <div class="row">
+              <div class="portfolio-heading padd-15">
+                <h2>HTML, CSS, JavaScript</h2>
+              </div>
+            </div>
+            <div class="row">
+              <!-- Portfolio item -->
+              <div class="portfolio-item padd-15">
+                <div class="portfolio-item-innner shadow-dark">
+                  <div class="portfolio-img">
+                    <a href="portfolio_blog1.html"><img src="images/portfolio/portfolio-1.png" alt="portfolio-1" /></a>
+                  </div>
+                </div>
+              </div>
+              <!-- Portfolio item -->
+              <div class="portfolio-item padd-15">
+                <div class="portfolio-item-innner shadow-dark">
+                  <div class="portfolio-img">
+                    <a href="portfolio_blog2.html"><img src="images/portfolio/portfolio-2.png" alt="portfolio-2" /></a>
+                  </div>
+                </div>
+              </div>
+              <!-- Portfolio item -->
+              <div class="portfolio-item padd-15">
+                <div class="portfolio-item-innner shadow-dark">
+                  <div class="portfolio-img">
+                    <a href="portfolio_blog3.html"><img src="images/portfolio/portfolio-3.png" alt="portfolio-3" /></a>
+                  </div>
+                </div>
+              </div>
+              <!-- Portfolio item -->
+              <div class="portfolio-item padd-15">
+                <div class="portfolio-item-innner shadow-dark">
+                  <div class="portfolio-img">
+                    <a href="portfolio_blog4.html"><img src="images/portfolio/portfolio-4.png" alt="portfolio-4" /></a>
+                  </div>
+                </div>
+              </div>
+              <!-- Portfolio item -->
+              <div class="portfolio-item padd-15">
+                <div class="portfolio-item-innner shadow-dark">
+                  <div class="portfolio-img">
+                    <a href="portfolio_blog5.html"><img src="images/portfolio/portfolio-5.png" alt="portfolio-4" /></a>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+          <hr>
+          <hr>
+
+          <div class="Project-categories">
+            <div class="row">
+              <div class="portfolio-heading padd-15">
+                <h2>Python</h2>
+              </div>
+            </div>
+            <div class="row">
+              <!-- Portfolio item -->
+              <div class="portfolio-item padd-15">
+                <div class="portfolio-item-innner shadow-dark">
+                  <div class="portfolio-img">
+                    <a href="portfolio_blog6.html"><img src="images/portfolio/portfolioPython-1.png" alt="portfolio-1" /></a>
+                  </div>
+                </div>
+              </div>
+              <!-- Portfolio item -->
+              <div class="portfolio-item padd-15">
+                <div class="portfolio-item-innner shadow-dark">
+                  <div class="portfolio-img">
+                    <a href="portfolio_blog7.html"><img src="images/portfolio/portfolioPython-2.jpg" alt="portfolio-2" /></a>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+          <hr>
+          <hr>
+
+
+          <div class="Project-categories">
+            <div class="row">
+              <div class="portfolio-heading padd-15">
+                <h2>C++</h2>
+              </div>
+            </div>
+            <div class="row">
+              <!-- Portfolio item -->
+              <div class="portfolio-item padd-15">
+                <div class="portfolio-item-innner shadow-dark">
+                  <div class="portfolio-img">
+                    <a href="portfolio_blog8.html"><img src="images/portfolio/portfolio_cpp-1.png" alt="portfolio-1" /></a>
+                  </div>
+                </div>
+              </div>
+              
+              
+            </div>
+          </div>
+          <hr>
+          <hr>
+
+          <div class="Project-categories">
+            <div class="row">
+              <div class="portfolio-heading padd-15">
+                <h2>Android</h2>
+              </div>
+            </div>
+            <!-- <div class="row"> -->
+              <!-- Portfolio item -->
+              <!-- <div class="portfolio-item padd-15">
+                <div class="portfolio-item-innner shadow-dark">
+                  <div class="portfolio-img">
+                    <a href="bllog-single.html"><img src="images/portfolio/portfolio_cpp-1.png" alt="portfolio-1" /></a>
+                  </div>
+                </div>
+              </div> -->
+              
+              
+            </div>
+          </div>
+          <hr>
+          <hr>
+
+        </div>
+      </section>
+      <!-- Portfolio Section End -->
+
+      <!-- Contact Section Start -->
+      <section class="contact section" id="contact">
+        <div class="container">
+          <div class="row">
+            <div class="section-title padd-15">
+              <h2>Contact Me</h2>
+            </div>
+          </div>
+          <h3 class="contact-title padd-15">Do You Have Any Questions?</h3>
+          <h4 class="contact-sub-title padd-15">I'M AT YOUR SERVICE</h4>
+          <div class="row">
+            <div class="contact-info-item padd-15">
+              <div class="icon"><i class="fa fa-envelope"></i></div>
+              <h4>Email</h4>
+              <p>ashokmaurya2050@gmail.com</p>
+            </div>
+            <!-- Contact info item-->
+            <div class="contact-info-item padd-15">
+              <!-- <div class="icon"><i class="fa fa-globe-europe"></i></div>
+              <h4>github</h4>
+              <p>https://github.com/ashok205050</p> -->
+            </div>
+            <div class="contact-info-item padd-15">
+              <div class="icon"><i class="fa fa-globe-europe"></i></div>
+              <h4>github</h4>
+              <p>https://github.com/ashok205050</p>
+            </div>
+          </div>
+          <h3 class="contact-title padd-15">SEND ME AN EMAIL</h3>
+          <h4 class="contact-sub-title padd-15">
+            I'M VERY RESPONSIVE TO MESSAGES
+          </h4>
+          <!-- Contact form -->
+          <div class="container">
+            <form action="" id="contactForm">
+                <div class="alert">Your message sent</div>
+    
+                <div class="inputBox">
+                    <input type="text" id="name" placeholder="Your name...." />
+                </div>
+    
+                <div class="inputBox">
+                    <input type="email" id="emailid" placeholder="Your Email....." />
+                </div>
+    
+                <div class="inputBox">
+                    <textarea id="msgContent" cols="30" rows="10" placeholder="Message"></textarea>
+                </div>
+    
+                <div class="inputBox">
+                    <button type="submit">Send Message</button>
+                </div>
+            </form>
+            <div id="error-message" style="color: red; display: none;">Please fill out all fields.</div>
+      </section>
+      <!-- Contact Section End -->
+    </div>
+    <!-- Main Content End -->
+  </div>
+  <!-- Main Container End -->
+  <!-- Style Switcher Start -->
+  <div class="style-switcher">
+    <div class="style-switcher-toggler s-icon">
+      <i class="fas fa-cog fa-spin"></i>
+    </div>
+    <div class="day-night s-icon">
+      <i class="fas"></i>
+    </div>
+    <h4>Theme Colors</h4>
+    <div class="colors">
+      <span class="color-1" onclick="setActiveStyle('color-1')"></span>
+      <span class="color-2" onclick="setActiveStyle('color-2')"></span>
+      <span class="color-3" onclick="setActiveStyle('color-3')"></span>
+      <span class="color-4" onclick="setActiveStyle('color-4')"></span>
+      <span class="color-5" onclick="setActiveStyle('color-5')"></span>
+    </div>
+  </div>
+  <!-- Style Switcher End -->
+  <!-- Custom JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"
+    referrerpolicy="no-referrer"></script>
+  <script src="js/script.js"></script>
+  <script src="js/style-switcher.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
